@@ -1,0 +1,75 @@
+.swiper-wrapper {
+    display: flex;
+    
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+.about_us {
+    & .swiper-button {
+        position: absolute;
+        width: 58px;
+        top: 0px;
+        height: 58px;
+        display: block;
+        transition: all 0.6s ease;
+        border-radius: 50%;
+        
+        &.swiper-button__next{
+            right: 0px;
+            background: url(../../../src/icons/black-arrow.png) center no-repeat #FFB800;
+        }
+        &.swiper-button__next.swiper-button-disabled {
+            transform: rotate(180deg);
+            background: url(../../../src/icons/white-arrow.png) center no-repeat transparent;
+            border: 1px solid #E3E5E8;
+        }
+        &.swiper-button__prev {
+            right: 65px;
+            transform: rotate(180deg);
+            background: url(../../../src/icons/black-arrow.png) center no-repeat #FFB800;
+        }
+        &.swiper-button__prev.swiper-button-disabled {
+            transform: rotate(0deg);
+            background: url(../../../src/icons/white-arrow.png) center no-repeat transparent;
+            border: 1px solid #E3E5E8;
+        }
+    }
+    & .swiper-wrapper {
+        height: 505px;
+        & .swiper-slide {
+            width: 404px;
+            @media(max-width:1024px){
+                width: 244px;
+            }
+        }
+        @media(max-width:1024px){
+            height: 297px;
+        }
+    }
+}
+.sales {
+    & .swiper-pagination {
+        @media(max-width:1024px){
+            display: none;
+        };
+    }
+    & .swiper-pagination-bullet{
+        width: 8px;
+        height: 8px;
+        background-color: #17191C;
+        border-radius: 50%;
+        margin: 0px 3px;
+        &-active {
+            background-color: #FFB800;
+        }
+    }
+}

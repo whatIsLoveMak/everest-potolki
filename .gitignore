@@ -1,0 +1,34 @@
+.idea
+.composer
+
+# Application
+html/app/plugins/*
+html/app/languages/*
+!html/app/plugins/.gitkeep
+html/app/mu-plugins/*/
+html/app/upgrade
+html/app/uploads/*
+!html/app/uploads/.gitkeep
+
+# WordPress
+html/wp
+html/.htaccess
+
+# Logs
+/log/
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor/
+
+# WP-CLI
+wp-cli.local.yml
+
+#Docker
+docker/db/*
+!docker/db/.gitkeep

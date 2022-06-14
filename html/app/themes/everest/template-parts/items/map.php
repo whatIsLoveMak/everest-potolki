@@ -6,7 +6,7 @@ $logo    = $contacts['logo'];
 $socials  =$contacts['socials'];
 $adress = $contacts['address'];
 ?>
-<section id="map" class="section map">
+<section id="section-map" class="section map">
     <div class="container">
         <div  class="footer-map">
             <div class="footer-row">

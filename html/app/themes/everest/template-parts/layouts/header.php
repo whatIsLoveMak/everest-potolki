@@ -8,7 +8,7 @@ $socials  =$contacts['socials'];
 //var_dump($socials)
 ?>
 
-<header class="header">
+<header id="header" class="header">
     <div class="header__container container">
         <div class="header-row">
             <div class="header-row__left-side">
@@ -35,7 +35,7 @@ $socials  =$contacts['socials'];
                             <li class="menu__item"><a href="#our_works">Наши работы</a></li>
                             <li class="menu__item"><a href="#presents">Подарки</a></li>
                             <li class="menu__item"><a href="#sales_main">Калькулятор</a></li>
-                            <li class="menu__item"><a href="#map">Контакты</a></li>
+                            <li class="menu__item"><a href="#section-map">Контакты</a></li>
                             
                         </ul>
                         <ul class=" social-list ">
@@ -80,7 +80,7 @@ $socials  =$contacts['socials'];
                             <li class="menu__item"><a href="#our_works">Наши работы</a></li>
                             <li class="menu__item"><a href="#presents">Подарки</a></li>
                             <li class="menu__item"><a href="#sales_main">Калькулятор</a></li>
-                            <li class="menu__item"><a href="#map">Контакты</a></li>
+                            <li class="menu__item"><a href="#section-map">Контакты</a></li>
                             
                         </ul>
                         <ul class=" social-list ">

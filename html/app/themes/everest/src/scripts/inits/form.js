@@ -2,7 +2,7 @@ import axios from "axios";
 
 window.addEventListener('load', function() {
     const modalForm = document.querySelector('#modalForm');
-    console.log(modalForm)
+    
     if (modalForm) {
         listenForm(modalForm, 1)
     }

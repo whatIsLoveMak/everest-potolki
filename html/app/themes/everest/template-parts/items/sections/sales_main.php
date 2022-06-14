@@ -32,7 +32,7 @@
                                         <div class="cost-red"><?= ($card['stoimost'])?$card['stoimost']:null?></div>
                                     </div>
                                 </div>
-                                <button class="button button-yellow"><a href="#">Рассчитать стоимость</a></button>
+                                <button data-micromodal-trigger="modal-form" class="button button-yellow"><a href="#">Рассчитать стоимость</a></button>
                             </div>
                         </div>
                         <?php endforeach?>
@@ -40,7 +40,7 @@
                             <div class="sales__slide-row">
                                 <div class="last-slide-text">
                                     <h3>Другая площадь?</h3>
-                                    <button class="button"><a href="#">Посчитать</a></button>
+                                    <button data-micromodal-trigger="modal-form" class="button"><a href="#">Посчитать</a></button>
                                 </div>
                             </div>
                             

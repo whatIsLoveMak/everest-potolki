@@ -3,3 +3,4 @@
  import './ymaps'
  import './smoothScroll'
  import './form'
+ import './showMore'

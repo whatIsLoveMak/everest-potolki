@@ -9,7 +9,17 @@
         width: 100%;
         flex-wrap: wrap;
         justify-content: space-between;
-       
+        overflow: hidden;
+        transition: all 0.4s ease;
+        @media(min-width:320px){
+            max-height: none;
+        }
+        @media (min-width:1024px){
+            max-height: calc(785px + 705*(100vw/1440));
+        }
+        @media(min-width:1440px){
+            max-height: 1540px;
+        }
         &-item {
             position: relative;
             overflow: hidden;
@@ -173,4 +183,25 @@
             }
         }
     }
+    & .show-more {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    & .button {
+        max-width: 200px;
+        border: 1px solid #FFB800;
+
+    }
+    & .button:hover {
+        background: #FFB800;
+        color: white;
+    }
+    & .button:active {
+        color: black;
+    }
+}
+.max-content {
+    transition: all 0.4 ease;
+    max-height: max-content !important;
 }

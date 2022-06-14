@@ -1,4 +1,4 @@
-let links = document.querySelectorAll('.header .menu__item a[href*="#"]');
+let links = document.querySelectorAll(' a[href*="#"]');
 
 for (let link of links){
     link.addEventListener('click', function(event){
@@ -10,3 +10,18 @@ for (let link of links){
         })
     })
 }
+let workLinks = document.querySelectorAll('.our_works a');
+for(let link of workLinks){
+    link.addEventListener('click', function(e){
+        e.preventDefault();
+    })
+}
+let footerLink = document.querySelectorAll('.footer-grid__item ');
+footerLink[footerLink.length - 1].addEventListener('click', function(event){
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    
+})

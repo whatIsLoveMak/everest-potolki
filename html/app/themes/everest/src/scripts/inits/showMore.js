@@ -19,6 +19,4 @@ btnShowMore.addEventListener('click',function(){
 function setHeight(){
     let height = gridItem.clientHeight * 7;
     gridTemplate.style.maxHeight = height + 130 + 'px';
-    
-    console.log(height);
 }

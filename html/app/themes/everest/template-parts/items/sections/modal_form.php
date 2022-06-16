@@ -24,7 +24,7 @@
                         
                         <input type="tel"
                                placeholder="+7"
-                               name="input_2"
+                               name="input_3"
                                form="modalForm"
                                required
                                class="phone-mask"
@@ -35,7 +35,7 @@
 
                     <label class="checkbox-field input-root">
                         <input type="checkbox"
-                               name="input_3.1"
+                               name="input_4"
                                form="modalForm"
                                value="1"
                                data-input-id="4"
@@ -70,5 +70,28 @@
                 </div>
             </main>
         </div>
+    </div>
+</div>
+<div class="modal micromodal-slide" id="confirm2" aria-hidden="true">
+    
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal-background">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+                <div class="modal__container-row">
+                    <div class="confirm-title"><h4>Благодарим за заявку!</h4></div>
+                   
+                        <svg >
+                            <use xlink:href="#confirmed"></use>
+                        </svg>
+                   
+                    
+                    <div class="confirm-decription">
+                        <p>Наш менеджер свяжется с Вами</p>
+                        <p>в ближайшее время</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>

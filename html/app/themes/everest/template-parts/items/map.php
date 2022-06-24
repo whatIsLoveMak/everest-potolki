@@ -5,6 +5,7 @@ $phone    = $contacts['phone'];
 $logo    = $contacts['logo'];
 $socials  =$contacts['socials'];
 $adress = $contacts['address'];
+$vk = $contacts['vk']
 ?>
 <section id="section-map" class="section map">
     <div class="container">
@@ -18,8 +19,8 @@ $adress = $contacts['address'];
                     <div class="footer-contacts__socials">
                         <div class="footer-contacts__socials-title">Наши соцсети:</div>
                         <div class="footer-contacts__socials-items">
-                        <?php foreach ($socials as $social){ ?>
-                            <div class="footer-contacts__socials-item"><a href="<?=$social['link']?>"><img src="<?php echo $social['icon']['url']?>" alt="<?=$social['title']?>"></a></div>
+                        <?php foreach ($vk as $item){ ?>
+                            <div class="footer-contacts__socials-item"><a href="<?=$item['vk-link']?>"><img src="<?php echo $item['vk-img']['url']?>" alt="<?=$item['title']?>"></a></div>
                             <?php };?>
                         </div>
                     </div>

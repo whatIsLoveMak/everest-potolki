@@ -38,7 +38,7 @@ $socials  =$contacts['socials'];
                             <li class="menu__item"><a href="#section-map">Контакты</a></li>
                             
                         </ul>
-                        <ul class=" social-list ">
+                        <ul class=" social-listss ">
                             <?php foreach ($socials as $social){ ?>
                                 <li class="activated social-item"><a href="<?=$social['link']?>"><img src="<?php echo $social['icon']['url']?>" alt="<?=$social['title']?>"></a>
                                     <?php }; ?>
@@ -51,13 +51,12 @@ $socials  =$contacts['socials'];
             </div>
             <div class="header-row__right-side disabled">
                 <nav>
-                    <ul class=" social-list ">
+                    <ul class=" social-listss ">
                         <?php foreach ($socials as $social){
                         
                         ?>
-                        <li class="social-item"><a href="<?=$social['link']?>"><img src="<?php echo $social['icon']['url']?>" alt="<?=$social['title']?>"></a>
-                            <?php }; ?>
-                        </li>
+                        <li class="social-item"><a href="<?=$social['link']?>"><img src="<?php echo $social['icon']['url']?>" alt="<?=$social['title']?>"></a></li>
+                        <?php }; ?>
                         <li class="social-item"><a href="tel:+7<?=$phone?>"><?=$phone?></a></li>
                         
                     </ul>
@@ -83,11 +82,10 @@ $socials  =$contacts['socials'];
                             <li class="menu__item"><a href="#section-map">Контакты</a></li>
                             
                         </ul>
-                        <ul class=" social-list ">
+                        <ul class=" social-listss ">
                             <?php foreach ($socials as $social){ ?>
-                                <li class="activated social-item"><a href="<?=$social['link']?>"><img src="<?php echo $social['icon']['url']?>" alt="<?=$social['title']?>"></a>
-                                    <?php }; ?>
-                                </li>
+                                <li class="activated social-item"><a href="<?=$social['link']?>"><img src="<?php echo $social['icon']['url']?>" alt="<?=$social['title']?>"></a></li>
+                                <?php }; ?>
                             <li class="activated social-item"><a href="tel:+7<?=$phone?>"><?=$phone?></a></li>
                         </ul>
                     </nav>

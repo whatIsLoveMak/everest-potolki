@@ -261,6 +261,7 @@ let steps = document.querySelector('.form-steps');
 let steparr = steps.innerHTML.split('');
 
 buttonStart.addEventListener('click', function(){
+    
     arr[0] = '500';
     saleSpan.innerHTML = arr.join('');
     steparr[7] = Number(steparr[7])+1;
@@ -268,24 +269,45 @@ buttonStart.addEventListener('click', function(){
 })
 nextBtn.addEventListener('click', function(){
     let num = Number(arr[0]);
-    num+=500;
-    arr[0] = num;
+    let square = document.querySelector('#tab-hair-blonde');
+    if(square.value <=30){
+        arr[0] = num;
+    }
+    if(square.value> 30 && square.value <=50){
+        num+=334;
+        arr[0] = num
+        if(steparr[7] === 4){
+            arr[0] = 1500
+        }
+    }
+    if(square.value >50){
+        num+=500;
+        arr[0] = num;
+    }
     saleSpan.innerHTML = arr.join('');
     steparr[7] = Number(steparr[7])+1;
     steps.innerHTML = steparr.join('');
+    
 });
 prevBtn.addEventListener('click', function(){
     let num = Number(arr[0]);
-    num-=500;
-    arr[0] = num;
+    let square = document.querySelector('#tab-hair-blonde');
+    if(square.value <=30){
+        arr[0] = num;
+    }
+    if(square.value> 30 && square.value <=50){
+        num-=334;
+        arr[0] = num;
+        if(steparr[7]===2){
+            arr[0] = 0
+        }
+
+    }
+    if(square.value >50){
+        num-=500;
+        arr[0] = num;
+    }
     saleSpan.innerHTML = arr.join('');
     steparr[7] = Number(steparr[7])-1;
     steps.innerHTML = steparr.join('');
 });
-
-
-
-//console.log(steparr);
-function changeStep(){
-    
-}

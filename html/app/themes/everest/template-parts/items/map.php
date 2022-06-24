@@ -19,8 +19,8 @@ $vk = $contacts['vk']
                     <div class="footer-contacts__socials">
                         <div class="footer-contacts__socials-title">Наши соцсети:</div>
                         <div class="footer-contacts__socials-items">
-                        <?php foreach ($vk as $item){ ?>
-                            <div class="footer-contacts__socials-item"><a href="<?=$item['vk-link']?>"><img src="<?php echo $item['vk-img']['url']?>" alt="<?=$item['title']?>"></a></div>
+                            <?php  foreach ($vk as $item){?>
+                            <div class="footer-contacts__socials-item"><a href="<?=$item['vk-link']?>"><img src="<?php echo $item['vk-img']['url']?>" alt="<?=$item['vk-img']['title']?>"></a></div>
                             <?php };?>
                         </div>
                     </div>
